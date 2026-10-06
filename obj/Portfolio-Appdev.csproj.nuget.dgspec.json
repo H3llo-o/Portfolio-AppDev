@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-AppDev.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {}
   },
   "projects": {
-    "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-AppDev.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-AppDev.csproj",
-        "projectName": "Portfolio-AppDev",
-        "projectPath": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-AppDev.csproj",
-        "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-        "outputPath": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\obj\\",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
+        "projectName": "Portfolio-Appdev",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

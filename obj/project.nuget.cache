@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hD+o2u4C+3c=",
   "success": true,
   "projectFilePath": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-AppDev.csproj",
+=======
+  "dgSpecHash": "ofVg0GERuzM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\Home\\AppDev_Activity\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
+>>>>>>> d2a10cb7aa7b34fbba09d535b59e63fcbdfbd26d
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {}
+    "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {}
   },
   "projects": {
-    "d:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {
+    "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
+        "projectUniqueName": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
         "projectName": "Portfolio-Appdev",
-        "projectPath": "d:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
+        "projectPath": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\Portfolio-Appdev.csproj",
         "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-        "outputPath": "d:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\obj\\",
+        "outputPath": "D:\\Self Projects\\learningc#\\Duo_practice\\Portfolio-AppDev\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Portfolio_Appdev.Models.Profile
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -10,5 +12,7 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome, User!</h1>
-    <p>I am John Dominique G. Aquino</p>
+    <h1>@Model.Name</h1>
+    <p>@Model.About</p>
+    <p>Skills: @Model.Skills</p>
 </div>

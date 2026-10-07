@@ -8,7 +8,14 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        var profile = new Profile
+            {
+                Name = "John Dominique G. Aquino",
+                About = "I'm a CS...",
+                Skills = "C#, Java, R, Python"
+            };
+
+        return View(profile);
     }
 
     public IActionResult Privacy()

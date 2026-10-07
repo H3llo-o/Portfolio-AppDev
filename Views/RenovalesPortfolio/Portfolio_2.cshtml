@@ -9,8 +9,8 @@
     <div class="text-center">
         <h1 class="display-4">Welcome to My Portfolio</h1>
         <p>A culmination of all the works that I have done for the past few years</p>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <h1>@Model.view_personal_info.first_name</h1>
     </div>
 
@@ -25,8 +25,43 @@
             }
         }
     </div>
-
+    <br />
 </section>
+
+<section>
+    
+    <div>
+        <h3 class="text-end">Experiences</h3>
+        <br />
+        @{
+            foreach (UserInfoModel experience_copy in Model.view_experiences)
+            {
+                <label>@experience_copy.title</label>
+                <label>@experience_copy.subtitle</label>
+                <p>@experience_copy.address</p>
+                <p>@experience_copy.description</p>
+                <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>         
+            } 
+        }  
+    </div>
+    <br />
+
+    <div>
+        <h3 class="text-start">Projects</h3>
+        <br />
+        @{
+            foreach (UserInfoModel project_copy in Model.view_projects)
+            {
+                <label>@project_copy.title</label>
+                <label>@project_copy.subtitle</label>
+                <p>@project_copy.description</p>
+                <p>@{@project_copy.start_date.Month} @{@project_copy.start_date.Year} - @{@project_copy.end_date.Month} @{@project_copy.end_date.Year}</p>         
+            } 
+        }
+    </div>  
+</section>
+
+
 
 
 

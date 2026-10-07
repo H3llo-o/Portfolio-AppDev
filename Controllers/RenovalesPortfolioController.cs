@@ -18,32 +18,37 @@ public class RenovalesPortfolioController : Controller
             List<UserInfoModel> education = new List<UserInfoModel>();
             education.Add(new UserInfoModel
             { 
-                title = "Pasig City Science High School",
+                school_name = "Pasig City Science High School",
                 address = "Maybunga, Pasig City",
-                start_date = new DateOnly (2018, 0, 0),
-                end_date = new DateOnly (2022, 0, 0)
+                start_date = new DateOnly (2018, 1, 1),
+                end_date = new DateOnly (2022, 1, 1)
             } 
             );
 
             education.Add(new UserInfoModel
             { 
-                title = "Pasig City Science High School",
+                school_name = "Pasig City Science High School",
                 address = "Maybunga, Pasig City",
-                start_date = new DateOnly (2022, 0, 0),
-                end_date = new DateOnly (2024, 0, 0)
+                start_date = new DateOnly (2022, 1, 1),
+                end_date = new DateOnly (2024, 1, 1)
             } 
             );
 
             education.Add(new UserInfoModel
             { 
-                title = "Polytechnic University of the Philippines",
+                school_name = "Polytechnic University of the Philippines",
                 address = "Anonas Street, Sta. Mesa, Manila",
-                start_date = new DateOnly (2024, 0, 0),
-                end_date = new DateOnly (0, 0, 0)
+                start_date = new DateOnly (2024, 1, 1),
+                end_date = new DateOnly (2028, 1, 1)
             } 
             );
 
-            return View(personal_info, education);
+            ViewModel information_repo = new ViewModel()
+            {
+                view_personal_info = personal_info,
+                view_education = education,
+            };
+            return View(information_repo);
         }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

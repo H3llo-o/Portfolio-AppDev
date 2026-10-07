@@ -3,10 +3,6 @@ D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\apps
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.staticwebassets.runtime.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.staticwebassets.endpoints.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.exe
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.deps.json
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.runtimeconfig.json
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.dll
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.pdb
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\rpswa.dswa.cache.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.GeneratedMSBuildEditorConfig.editorconfig
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.AssemblyInfoInputs.cache
@@ -94,5 +90,9 @@ D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\swae
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.dll
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\refint\Portfolio-Appdev.dll
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.pdb
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.deps.json
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.runtimeconfig.json
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.dll
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.pdb
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.genruntimeconfig.cache
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\ref\Portfolio-Appdev.dll

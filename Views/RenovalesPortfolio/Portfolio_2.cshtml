@@ -1,0 +1,17 @@
+@model List<Portfolio_Appdev.Models.UserInfoModel>
+
+@{
+    ViewData[index: "Title"] = "Joshua's_Portfolio";
+}
+
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+    <p>A culmination of all the works that I have done for the past few years</p>
+    <br/>
+
+@{
+    foreach(UserInfoModel personal_info in Model)
+    {
+        <h1>@personal_info.first_name</h1>
+    }
+
+}

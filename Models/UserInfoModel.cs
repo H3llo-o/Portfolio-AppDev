@@ -7,8 +7,10 @@ public class UserInfoModel
     public int age { get; set; }
     public string address { get; set; }
     public string school_name { get; set; }
-    public string titles { get; set; }
+    public string title { get; set; }
     public string subtitle { get;set; }
     public string description { get; set; }
-    public DateOnly date { get; set; } 
+
+    public DateOnly start_date { get; set; } 
+    public DateOnly end_date { get; set; } 
 }

@@ -10,17 +10,23 @@
         <h1 class="display-4">Welcome to My Portfolio</h1>
         <p>A culmination of all the works that I have done for the past few years</p>
         <br/>
+        <br/>
         <h1>@Model.view_personal_info.first_name</h1>
     </div>
 
-    @{
-        foreach (UserInfoModel education_copy in Model.view_education)
-        {
-            <label>@education_copy.school_name</label>
-            <label>@education_copy.address</label>
-            <p>Graduated: @{@education_copy.start_date.Year} - @{@education_copy.end_date.Year}</p>         
+    <div>
+        <h3>Educational Attainment</h3>
+        @{
+            foreach (UserInfoModel education_copy in Model.view_education)
+            {
+                <label>@education_copy.school_name</label>
+                <label>@education_copy.address</label>
+                <p><b>Graduated:</b> @{@education_copy.start_date.Year} - @{@education_copy.end_date.Year}</p>         
+            }
         }
-    }
+    </div>
 
 </section>
+
+
 

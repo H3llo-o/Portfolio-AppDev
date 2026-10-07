@@ -11,6 +11,14 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult ChrisPortfolio()
+    {
+        ChrisPortfolioModel model = new ChrisPortfolioModel();
+        model .Name = "Christopher Laurio";
+        model .Description = "I'm a computer science student that has a passion in web and game development.";
+        model .ImagePath = "~/img/chrislaurio.jpg";
+        return View(model);
+    }
     public IActionResult Privacy()
     {
         return View();

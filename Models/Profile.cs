@@ -4,7 +4,12 @@ namespace Portfolio_Appdev.Models
     {
         public string Name { get; set; }
         public string About { get; set; }
-        public string Skills { get; set; }
+
+        public List<string> DataScienceSkills { get; set; } = new List<string>();
+        public List<string> ProgrammingSkills { get; set; } = new List<string>();
+        public List<string> WebDevelopmentSkills { get; set; } = new List<string>();
+        public List<string> ArtsDesignSkills { get; set; } = new List<string>();
+        public List<string> CollaborationSkills { get; set; } = new List<string>();
     }
 
 }

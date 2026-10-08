@@ -16,5 +16,49 @@
     <h1 class="display-4">Welcome!</h1>
     <h1>I am @Model.Name</h1>
     <p>@Model.About</p>
-    <p>Skills: @Model.Skills</p>
+
+    <h2>Data Science</h2>
+
+    <ul>
+        @foreach (var skill in Model.DataScienceSkills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+
+    <h2>Programming</h2>
+
+    <ul>
+        @foreach (var skill in Model.ProgrammingSkills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+
+    <h2>Web Development</h2>
+
+    <ul>
+        @foreach (var skill in Model.WebDevelopmentSkills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+
+    <h2>Arts & Design</h2>
+
+    <ul>
+        @foreach (var skill in Model.ArtsDesignSkills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+
+    <h2>Collaboration</h2>
+
+    <ul>
+        @foreach (var skill in Model.CollaborationSkills)
+        {
+            <li>@skill</li>
+        }
+    </ul>
 </div>

@@ -12,7 +12,34 @@ public class HomeController : Controller
             {
                 Name = "John Dominique G. Aquino",
                 About = "Computer Science Undergraduate",
-                Skills = "C#, Java, R, Python"
+
+                DataScienceSkills = new List<string>
+                    {
+                        "Python",
+                        "R",
+                        "SQL"
+                    },
+                ProgrammingSkills = new List<string>
+                    {
+                        "C#",
+                        "Java"
+                    },
+                WebDevelopmentSkills = new List<string>
+                    {
+                        "HTML",
+                        "CSS",
+                        "JavaScript"
+                    },
+                ArtsDesignSkills = new List<string>
+                    {
+                        "Adobe Photoshop",
+                    },
+                CollaborationSkills = new List<string>
+                    {
+                        "GitHub",
+                        "Online Document Collaboration Tools",
+                        "Online Communication Platforms"
+                    }
             };
 
         return View(profile);

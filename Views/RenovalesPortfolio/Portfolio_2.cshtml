@@ -6,24 +6,22 @@
 
 <section class="parallax">
 
-    <div>
-        <img src="~/img/Sky.png" id="sky" />
-        <div id="text">
-            <h1 class="display-5">Welcome to My Portfolio</h1>
-            <p><i>A culmination of all the works that I have done over the past few years</i></p>
-            <br />
-            <br />
-            <h3>Hi! I am <span id="name">@Model.view_personal_info.first_name</span></h3>
-        </div>
-        <img src="~/img/Cloud.png" id="cloud" />
-        <img src="~/img/Trees_back.png" id="tree_2" />
-        <img src="~/img/Trees_front.png" id="tree_1" />
-        <img src="~/img/Bush.png" id="bush" />
-        <img src="~/img/Fixed_Ground.png" id="ground" />
+    <img src="~/img/Sky.png" id="sky" />
+    <div id="title_text">
+        <h1 class="display-5">Welcome to My Portfolio</h1>
+        <p><i>A culmination of all the works that I have done over the past few years</i></p>
+        <br />
+        <br />
+        <h3>Hi! I am <span id="name">@Model.view_personal_info.first_name</span></h3>
     </div>
+    <img src="~/img/Cloud.png" id="cloud" />
+    <img src="~/img/Trees_back.png" id="tree_2" />
+    <img src="~/img/Trees_front.png" id="tree_1" />
+    <img src="~/img/Bush.png" id="bush" />
+    <img src="~/img/Fixed_Ground.png" id="ground" />
 </section>
 
-<section class="info">
+<section>
     <div>
         <h3>Educational Attainment</h3>
         @{
@@ -35,6 +33,9 @@
             }
         }
     </div>
+</section>
+
+
     <br />
     
     <div>
@@ -66,7 +67,6 @@
             } 
         }
     </div>  
-</section>
 
 
 

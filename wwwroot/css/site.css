@@ -48,8 +48,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  pointer-events: none;
   object-fit: cover;
+  pointer-events: none;
+}
+
+#title_text {
+  color: #6c5671;
+  margin-top: -250px;
 }
 
 #name {
@@ -63,7 +68,7 @@ body {
 
 .info {
   position: relative;
-  background: #6C5671;
+  background: #6c5671;
   padding:100px;
   color: #ffff;
 }

@@ -8,8 +8,8 @@
 
     <img src="~/img/Sky.png" id="sky" />
     <div id="title_text">
-        <h1 class="display-5">Welcome to My Portfolio</h1>
-        <p><i>A culmination of all the works that I have done over the past few years</i></p>
+        <h1 class="display-5">Little Things About Me</h1>
+        <p><i>A culmination of some of works that I have done over the past few years</i></p>
         <br />
         <br />
         <h3>Hi! I am <span id="name">@Model.view_personal_info.first_name</span></h3>
@@ -75,7 +75,7 @@
                         <label>@experience_copy.subtitle</label>
                         <p>@experience_copy.address</p>
                         <p>@experience_copy.description</p>
-                        <p>@{@experience_copy.start_date.Month}/@{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month}/@{@experience_copy.end_date.Year}</p>
+                        <p><b>@{@experience_copy.start_date.Month}/@{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month}/@{@experience_copy.end_date.Year}</b></p>
                     </div>         
                 } 
             }
@@ -85,16 +85,20 @@
 </section>
 
 <section class="info" id="about-me">
-    <div class="panning">
+    <div class="panning" id="panning">
         <div class="panner">
             <div class="pan" id="one">
                 <h3 class="info-title" id="about-me-title">About Me</h3>
-                <img src="~/img/Mascot_run.gif">
+                <img src="~/img/Mascot_run.gif" id="one-mascot">
                 <p id="one-text">Slide to the Right!</p>
             </div>
-            <div class="pan" id="two"></div>
+            <div class="pan" id="two">
+                <h3 id="title-desc-1">CREATIVE WORK</h3>
+                <h3 id="title-desc-2">THIS IS ME</h3>
+                <h3 id="title-desc-3">A VISION</h3>
+                <img src="~/img/Picture.png" id="self-picture"/>
+            </div>
             <div class="pan" id="three"></div>
-            <div class="pan" id="four"></div>
         </div> 
     </div> 
 </section> 

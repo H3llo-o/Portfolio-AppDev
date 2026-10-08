@@ -4,6 +4,7 @@ public class UserInfoModel
 {
     public string first_name { get; set; }
     public string last_name { get; set; }
+    public string image { get; set; }
     public int age { get; set; }
     public string address { get; set; }
     public string school_name { get; set; }

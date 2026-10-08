@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Portfolio_Appdev.Models;
 
@@ -90,7 +91,8 @@ public class RenovalesPortfolioController : Controller
 
             List<UserInfoModel> project = new List<UserInfoModel>();
             project.Add(new UserInfoModel
-            {
+            {   
+                image = "~/img/Isla_Bank.png",
                 title = "Isla Bank",
                 subtitle = "Backend lead",
                 description = "A web application that enables bank card registration",
@@ -100,9 +102,10 @@ public class RenovalesPortfolioController : Controller
             );
 
             project.Add(new UserInfoModel
-            {
+            {   
+                image = "~/img/Meerkat_idle_base.gif",
                 title = "MeeTeams",
-                subtitle = "UI/UX, Branding and Concept",
+                subtitle = "UI/UX and Branding",
                 description = "A chat system built for quick meetings on the go",
                 start_date = new DateOnly (2025, 11, 1),
                 end_date = new DateOnly (2026, 1, 1),
@@ -111,9 +114,10 @@ public class RenovalesPortfolioController : Controller
 
             project.Add(new UserInfoModel
             {
+                image = "~/img/MC_front-dile.gif",
                 title = "Egress",
                 subtitle = "Graphic Artist",
-                description = "A game entry for the GDG PUP Game Development Game Jam 2025",
+                description = "2025 GDG PUP Game Jam entry",
                 start_date = new DateOnly (2025, 3, 1),
                 end_date = new DateOnly (2025, 7, 1)
             }

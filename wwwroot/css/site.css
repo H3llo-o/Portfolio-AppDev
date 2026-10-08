@@ -142,6 +142,10 @@ body {
   transform: translateY(-5px) scale(1.02);
 }
 
+.project-grid-card img {
+  width: 15vw;
+}
+
 
 
 

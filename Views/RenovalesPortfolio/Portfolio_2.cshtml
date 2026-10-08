@@ -69,6 +69,7 @@
                 foreach (UserInfoModel project_copy in Model.view_projects)
                 {
                     <div class="project-grid-card">
+                        <img src="@project_copy.image" asp-append-version="true"/>
                         <h5>@project_copy.title</h5>
                         <label>@project_copy.subtitle</label>
                         <p>@project_copy.description</p>
@@ -82,7 +83,7 @@
 
 
 <section>
-    
+
 </section>
 
 

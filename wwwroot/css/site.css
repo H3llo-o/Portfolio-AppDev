@@ -70,12 +70,12 @@ body {
   position: relative;
   background: #6c5771;
   padding: 100px;
-  color: #6c5770;
 }
 
 .info-title {
   color: #ffff;
   text-align: center;
+  font-size: 2em;
   font-weight: 5px;
 }
 
@@ -93,14 +93,18 @@ body {
 }
 
 .experience-grid-card {
-  border: 4px solid #dea38B; 
-  background-color: #ffe6C6;
+  border: 2px solid #ffff;
+  background-color: #ffff; 
   border-radius: 1em;
   padding: 2ex;
   align-items: baseline;
   justify-content: left;
   cursor: pointer;
   transition: 0.1s ease-in-out;
+}
+
+#experience-text {
+  color: #6c5771;
 }
 
 .experience-grid-card:hover {
@@ -143,6 +147,7 @@ body {
 }
 
 .project-grid-card img {
+  filter: brightness (0);
   width: 15vw;
 }
 
@@ -160,7 +165,18 @@ body {
 }
 
 #one {
+  color: #ffff;
+  display: flex;
+  position: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #6c5671;
+}
+
+#one-text{
+  left: 1300px;
+  position: absolute;
 }
 
 #two {
@@ -185,6 +201,11 @@ body {
   position: absolute;
   left: 0;
   scrollbar-width: none;
+}
+
+#about-me-title {
+  top: 10px;
+  position: absolute;
 }
 
 /* #about-me {

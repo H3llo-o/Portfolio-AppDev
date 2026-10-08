@@ -21,8 +21,9 @@
     <img src="~/img/Fixed_Ground.png" id="ground" />
 </section>
 
-<section class="info">
+
 @*
+<section class="info">
     <div>
         <h3>Educational Attainment</h3>
         <div>
@@ -37,28 +38,8 @@
         </div>
     </div>
     <br />
- *@
-
-    <div class="experience-contents">
-        <h3 class="info-title">Experiences</h3>
-        <br />
-        <div class="experience-grid">
-            @{
-                foreach (UserInfoModel experience_copy in Model.view_experiences)
-                {
-                    <div class="experience-grid-card">
-                        <h5>@experience_copy.title</h5>
-                        <label>@experience_copy.subtitle</label>
-                        <p>@experience_copy.address</p>
-                        <p>@experience_copy.description</p>
-                        <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>
-                    </div>         
-                } 
-            }
-        </div> 
-    </div>
-    <br />
 </section>
+ *@
 
 <section class="info">
     <h3 class="info-title">Projects</h3>
@@ -70,10 +51,10 @@
                 {
                     <div class="project-grid-card">
                         <img src="@project_copy.image" asp-append-version="true"/>
-                        <h5>@project_copy.title</h5>
+                        <h4>@project_copy.title</h4>
                         <label>@project_copy.subtitle</label>
                         <p>@project_copy.description</p>
-                        <p>@{@project_copy.start_date.Month} @{@project_copy.start_date.Year} - @{@project_copy.end_date.Month} @{@project_copy.end_date.Year}</p>
+                        <p><b>@{@project_copy.start_date.Month}/@{@project_copy.start_date.Year} - @{@project_copy.end_date.Month}/@{@project_copy.end_date.Year}</b></p>
                     </div>         
                 } 
             }
@@ -81,19 +62,42 @@
     </div>  
 </section>
 
+<section class="info">
+    <div class="experience-contents">
+        <h3 class="info-title">Experience</h3>
+        <br />
+        <div class="experience-grid" id="experience-text">
+            @{
+                foreach (UserInfoModel experience_copy in Model.view_experiences)
+                {
+                    <div class="experience-grid-card">
+                        <h5>@experience_copy.title</h5>
+                        <label>@experience_copy.subtitle</label>
+                        <p>@experience_copy.address</p>
+                        <p>@experience_copy.description</p>
+                        <p>@{@experience_copy.start_date.Month}/@{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month}/@{@experience_copy.end_date.Year}</p>
+                    </div>         
+                } 
+            }
+        </div> 
+    </div>
+    <br />
+</section>
+
 <section class="info" id="about-me">
     <div class="panning">
-        <img src="~/img/Mascot_Run.gif"></>
-        <div class="panner"> 
+        <div class="panner">
             <div class="pan" id="one">
-                <h3 class="info-title">About Me</h3>
+                <h3 class="info-title" id="about-me-title">About Me</h3>
+                <img src="~/img/Mascot_run.gif">
+                <p id="one-text">Slide to the Right!</p>
             </div>
             <div class="pan" id="two"></div>
             <div class="pan" id="three"></div>
             <div class="pan" id="four"></div>
         </div> 
-    </div>
-</section>
+    </div> 
+</section> 
 
 
 

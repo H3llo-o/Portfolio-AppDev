@@ -40,6 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 110vh;
+  overflow: hidden;
 }
 
 .parallax img {
@@ -48,13 +49,33 @@ body {
   left: 0;
   width: 100%;
   pointer-events: none;
+  object-fit: cover;
 }
 
 #name {
   text-align: center;
-  font-size:3ex;  
+  font-size:3ex;
 }
 
-#sky_bg {
+#sky, #cloud {
   z-index: -1;
+}
+
+.info {
+  position: relative;
+  background: #6C5671;
+  padding:100px;
+  color: #ffff;
+}
+
+.educ {
+  margin-bottom: 10px
+}
+
+.exp {
+
+}
+
+.proj {
+
 }

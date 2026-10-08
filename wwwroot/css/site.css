@@ -146,6 +146,50 @@ body {
   width: 15vw;
 }
 
+.pan {
+  width: 100vw;
+  height: 100vh;
+}
 
+.panner {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
 
+#one {
+  background-color: #6c5671;
+}
 
+#two {
+  background-color: #dea38B;
+}
+
+#three {
+  background-color: #ffe6C6;
+}
+
+#four {
+  background-color: #ffff;
+}
+
+.panning {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  scrollbar-width: none;
+}
+
+/* #about-me {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+} */

@@ -47,6 +47,17 @@ public class RenovalesPortfolioController : Controller
             experience.Add(new UserInfoModel
             {
                 title = "Google Developer Groups on Campus",
+                subtitle = "Chief Creatives Officer",
+                address = "Manila City, Philippines",
+                description = "Currently leading the teams involving Audio-visuals, Branding and Assets, and Graphics and Design",
+                start_date = new DateOnly (2026, 9, 1), 
+                end_date = new DateOnly (2027, 6, 1)
+            }
+            );
+            
+            experience.Add(new UserInfoModel
+            {
+                title = "Google Developer Groups on Campus",
                 subtitle = "Branding and Assets Associate",
                 address = "Manila City, Philippines",
                 description = "Worked on key assets for the previous term, creating numerous digital materials",
@@ -68,8 +79,8 @@ public class RenovalesPortfolioController : Controller
 
             experience.Add(new UserInfoModel
             {
-                title = "Philippine National Oil Company, Future Ready Academy",
-                subtitle = "Scholar",
+                title = "Philippine National Oil Company",
+                subtitle = "Future Ready Academy Scholar",
                 address = "Taguig City, Philippines",
                 description = "Attended seminars to gain foundational skills in leadership and energy management",
                 start_date = new DateOnly (2024, 1, 1), 
@@ -82,7 +93,7 @@ public class RenovalesPortfolioController : Controller
             {
                 title = "Isla Bank",
                 subtitle = "Backend lead",
-                description = "Curated the database with MySQL, incorporating Next JS 16, Tailwing CSS, and other React libraries",
+                description = "A web application that enables bank card registration",
                 start_date = new DateOnly (2026, 4, 1),
                 end_date = new DateOnly (2026, 6, 1)
             }
@@ -92,7 +103,7 @@ public class RenovalesPortfolioController : Controller
             {
                 title = "MeeTeams",
                 subtitle = "UI/UX, Branding and Concept",
-                description = "Designed the interface, and created marketing materials, including characters etc.",
+                description = "A chat system built for quick meetings on the go",
                 start_date = new DateOnly (2025, 11, 1),
                 end_date = new DateOnly (2026, 1, 1),
             }
@@ -102,7 +113,7 @@ public class RenovalesPortfolioController : Controller
             {
                 title = "Egress",
                 subtitle = "Graphic Artist",
-                description = "Created the pixelated assets for development, involving character sprites and animations, platforms, etc.",
+                description = "A game entry for the GDG PUP Game Development Game Jam 2025",
                 start_date = new DateOnly (2025, 3, 1),
                 end_date = new DateOnly (2025, 7, 1)
             }

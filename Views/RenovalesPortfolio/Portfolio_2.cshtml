@@ -39,43 +39,51 @@
     <br />
  *@
 
-    <div class="experience-info">
-        <h3 id="info-title">Experiences</h3>
+    <div class="experience-contents">
+        <h3 class="info-title">Experiences</h3>
         <br />
-        <div>
-            <div class="grid">
-                @{
-                    foreach (UserInfoModel experience_copy in Model.view_experiences)
-                    {
-                        <div class="grid-card">
-                            <h5>@experience_copy.title</h5>
-                            <label>@experience_copy.subtitle</label>
-                            <p>@experience_copy.address</p>
-                            <p>@experience_copy.description</p>
-                            <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>
-                        </div>         
-                    } 
-                }
-            </div> 
+        <div class="experience-grid">
+            @{
+                foreach (UserInfoModel experience_copy in Model.view_experiences)
+                {
+                    <div class="experience-grid-card">
+                        <h5>@experience_copy.title</h5>
+                        <label>@experience_copy.subtitle</label>
+                        <p>@experience_copy.address</p>
+                        <p>@experience_copy.description</p>
+                        <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>
+                    </div>         
+                } 
+            }
         </div> 
     </div>
     <br />
+</section>
 
+<section class="info">
     <div>
-        <h3 class="text-start">Projects</h3>
+        <h3 class="info-title">Projects</h3>
         <br />
-        @{
-            foreach (UserInfoModel project_copy in Model.view_projects)
-            {
-                <h5>@project_copy.title</h5>
-                <label>@project_copy.subtitle</label>
-                <p>@project_copy.description</p>
-                <p>@{@project_copy.start_date.Month} @{@project_copy.start_date.Year} - @{@project_copy.end_date.Month} @{@project_copy.end_date.Year}</p>         
-            } 
-        }
+        <div class="project-grid" id="project-text">
+            @{
+                foreach (UserInfoModel project_copy in Model.view_projects)
+                {
+                    <div class="project-grid-card">
+                        <h5>@project_copy.title</h5>
+                        <label>@project_copy.subtitle</label>
+                        <p>@project_copy.description</p>
+                        <p>@{@project_copy.start_date.Month} @{@project_copy.start_date.Year} - @{@project_copy.end_date.Month} @{@project_copy.end_date.Year}</p>
+                    </div>         
+                } 
+            }
+        </div>
     </div>  
 </section>
 
+
+<section>
+    
+</section>
 
 
 

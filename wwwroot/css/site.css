@@ -68,34 +68,80 @@ body {
 
 .info {
   position: relative;
-  background: #6c5770;
-  padding:100px;
+  background: #6c5771;
+  padding: 100px;
   color: #6c5770;
 }
 
-#info-title {
+.info-title {
   color: #ffff;
+  text-align: center;
   font-weight: 5px;
 }
 
-.experience-info {
+.experience-contents{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5ex;
 }
 
-.grid {
+.experience-grid {
   display: grid;
   grid-template-columns: repeat(2, 5fr);
   gap: 1em;
 }
 
-.grid-card {
-  border: 5px solid #DEA38B; 
+.experience-grid-card {
+  border: 4px solid #dea38B; 
   background-color: #ffe6C6;
   border-radius: 1em;
   padding: 2ex;
   align-items: baseline;
   justify-content: left;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
+
+.experience-grid-card:hover {
+  transform: scale(1.02);
+  background-color: #dea38B;
+  color: #ffff;
+  box-shadow: 0px 4px 10px #00000050;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+#project-text {
+  color: #ffff;
+}
+
+.project-grid-card {
+  border: 2px solid #ffff;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5em;
+  gap: 1ex;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.project-grid-card:hover {
+  border-color: #ffe6C6;
+  background-color: #ffe6C6;
+  color: #6c5771;
+  box-shadow: 0px 4px 10px #00000050;
+  transform: translateY(-5px) scale(1.02);
+}
+
+
+
+

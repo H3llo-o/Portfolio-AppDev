@@ -10,7 +10,6 @@ public class UserInfoModel
     public string title { get; set; }
     public string subtitle { get;set; }
     public string description { get; set; }
-
     public DateOnly start_date { get; set; } 
     public DateOnly end_date { get; set; } 
 }

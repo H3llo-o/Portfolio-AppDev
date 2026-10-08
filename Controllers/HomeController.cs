@@ -64,6 +64,10 @@ public class HomeController : Controller
 
     public IActionResult Portfolio()
     {
+        var portfolio = new Portfolio
+            {
+                
+            };
         return View();
     }
     

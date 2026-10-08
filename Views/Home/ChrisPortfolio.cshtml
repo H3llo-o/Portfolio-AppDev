@@ -1,8 +1,73 @@
 @model Portfolio_Appdev.Models.ChrisPortfolioModel
 
-<div>
-    <h3>HELLO WORLD! I AM</h3>
-    <h1>@Model.Name</h1>
-    <h3>@Model.Description</h3>
-    <img src="@Model.ImagePath" asp-append-version="true" alt="@Model.Name" />
+<link rel="stylesheet" href="~/css/chris.css"/>
+
+
+
+<div class="container">
+    <div class="text-left">
+        <h3 style="--time: 0" class="display-1 FadeLeft">HELLO WORLD! I AM</h3>
+        <h1 style="--time: 1" class="display-2 FadeLeft">@Model.Name</h1>
+        <h3 style="--time: 2" class="display-3 FadeLeft">@Model.Description</h3>
+        <div class="social-icons">
+            <a href="@Model.GitHubLink" style="--time: 4" class="custom-btn PopIn" target="_blank">
+                <img src="~/img/github.png" class="icon"/>
+            </a>
+            <a href="@Model.LinkInLink" style="--time: 4" class="custom-btn PopIn" target="_blank">
+                <img src="~/img/linkedin.png" class="icon"/>
+            </a>
+        </div>
+    </div>
+    <img src="@Model.ImagePath" asp-append-version="true" style="--time: 1" class="profile-img FadeRight"/>
 </div>
+<div style="--time: 3" class="container LineContainer FadeUp ScrollAnim">
+    <div class="text-top">
+        <h3 class="display-4">
+            <img src="~/img/book.png" class="icon"/>
+            EDUCATION
+        </h3>
+        <h3 class="display-4">
+            <img src="~/img/code.png" class="icon"/>
+            SKILLS
+        </h3>
+    </div>
+    <div class="text-top">
+        <div class="box">
+            <h4 class="display-4">@Model.School</h4>
+            <h5 class="display-4">@Model.Bachelors</h5>
+            <p class="display-3">@Model.SchoolYear</p>
+        </div>
+        <div class="SkillBox">
+            @foreach (SkillsModel skills in Model.Skills)
+            {
+                <div class="bar">
+                    <span style="--progress: @skills.Percentage;" class="Progress"></span>
+                    <h4 style="margin-top: 15px;" class="display-4">@skills.Name</h4>
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>
+<div style="padding: 50px; padding-bottom: 20px; --time: 3" class="container LineContainer FadeUp ScrollAnim">
+    <h3 class="display-4">
+        <img src="~/img/folder.png" class="icon"/>
+        Projects
+    </h3>
+</div>
+@foreach (ProjectModel project in Model.Projects)
+{
+    <div style="--time: 3" href="@project.GitHubLink" class="ProjectContainer FadeUp ScrollAnim">
+        <img src="@project.ImagePath" asp-append-version="true" class="project-img"/>
+        <div class="project-text">
+            <h3 class="display-1">@project.Name</h3>
+            <p class="display-5">@project.Description</p>
+            <div class="projectAddInfo">
+                @foreach (string info in project.AddInfo)
+                {
+                    <p class="display-6">@info</p>
+                }
+            </div>
+        </div>
+    </div>
+}

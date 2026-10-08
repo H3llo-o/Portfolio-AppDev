@@ -6,4 +6,5 @@ namespace Portfolio_Appdev.Models
         public string About { get; set; }
         public string Skills { get; set; }
     }
+
 }

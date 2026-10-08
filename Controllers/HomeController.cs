@@ -11,28 +11,21 @@ public class HomeController : Controller
         var profile = new Profile
             {
                 Name = "John Dominique G. Aquino",
-                About = "I'm a CS...",
+                About = "Computer Science Undergraduate",
                 Skills = "C#, Java, R, Python"
             };
 
         return View(profile);
     }
 
-    public IActionResult Privacy()
+    public IActionResult Portfolio()
     {
         return View();
     }
-
-    public IActionResult Profile()
+    
+    public IActionResult Privacy()
     {
-        var profile = new Profile
-            {
-                Name = "John Dominique G. Aquino",
-                About = "I'm a CS...",
-                Skills = "C#, Java, R, Python"
-            };
-
-        return View(profile);
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -11,7 +11,24 @@ public class HomeController : Controller
         var profile = new Profile
             {
                 Name = "John Dominique G. Aquino",
-                About = "Computer Science Undergraduate",
+                About = "Bachelor of Science in Computer Science Undergraduate",
+                Number = "(+63)908-151-8075",
+                Email = "johnaquino1203@gmail.com",
+                Address = "119-G, Dr. Sixto Antonio Avenue, Brgy. Rosario, Pasig City, Metro Manila, Philippines",
+
+                CollegeBg = new List<string>
+                    {
+                        "Bachelor of Science in Computer Science",
+                        "Manila City, Metro Manila, Philippines",
+                        "3rd Year Undergraduate (A.Y. 2026 - 2027)"
+                    },
+
+                HSBg = new List<string>
+                    {
+                        "Senior High School Graduate with Honors",
+                        "Pasig City, Metro Manila, Philippines",
+                        "Graduated in May 2024"
+                    },
 
                 DataScienceSkills = new List<string>
                     {

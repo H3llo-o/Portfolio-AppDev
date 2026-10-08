@@ -10,12 +10,61 @@
         color: #D3AF37;
         font-family: Arial, sans-serif;
     }
+
+    .sep-line {
+        width: 95%;
+        border: none;
+        border-top: 6px solid #D3AF37;
+        margin: 5px auto;
+        opacity: 1;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .contact-info p {
+        margin-bottom: 5px;
+    }
+
 </style>
 
 <div class="text-center">
     <h1 class="display-4">Welcome!</h1>
     <h1>I am @Model.Name</h1>
     <p>@Model.About</p>
+
+    <div class="contact-info">
+        <p>@Model.Number</p>
+        <p>@Model.Email</p>
+        <p>@Model.Address</p>
+    </div>
+
+    <hr class="sep-line">
+</div>
+
+<div class="text-justify">
+    <h1>Educational Background</h1>
+    <h2>Polytechnic University of the Philippines - Mabini Campus</h2>
+    <ul>
+        @foreach (var skill in Model.CollegeBg)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+
+    <h2>Pasig City Science High School</h2>
+    <ul>
+        @foreach (var skill in Model.HSBg)
+        {
+            <li>@skill</li>
+        }
+    </ul>
+</div>
 
     <h2>Data Science</h2>
 
@@ -61,4 +110,4 @@
             <li>@skill</li>
         }
     </ul>
-</div>
+

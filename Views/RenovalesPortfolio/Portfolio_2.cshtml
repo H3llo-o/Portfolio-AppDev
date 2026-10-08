@@ -21,36 +21,43 @@
     <img src="~/img/Fixed_Ground.png" id="ground" />
 </section>
 
-<section>
+<section class="info">
+@*
     <div>
         <h3>Educational Attainment</h3>
-        @{
-            foreach (UserInfoModel education_copy in Model.view_education)
-            {
-                <h5>@education_copy.school_name</h5>
-                <p>@education_copy.address</p>
-                <p><b>Graduated:</b> @{@education_copy.start_date.Year} - @{@education_copy.end_date.Year}</p>         
+        <div>
+            @{
+                foreach (UserInfoModel education_copy in Model.view_education)
+                {
+                    <h5>@education_copy.school_name</h5>
+                    <p>@education_copy.address</p>
+                    <p><b>Graduated:</b> @{@education_copy.start_date.Year} - @{@education_copy.end_date.Year}</p>         
+                }
             }
-        }
+        </div>
     </div>
-</section>
-
-
     <br />
-    
-    <div>
-        <h3>Experiences</h3>
+ *@
+
+    <div class="experience-info">
+        <h3 id="info-title">Experiences</h3>
         <br />
-        @{
-            foreach (UserInfoModel experience_copy in Model.view_experiences)
-            {
-                <h5>@experience_copy.title</h5>
-                <label>@experience_copy.subtitle</label>
-                <p>@experience_copy.address</p>
-                <p>@experience_copy.description</p>
-                <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>         
-            } 
-        }  
+        <div>
+            <div class="grid">
+                @{
+                    foreach (UserInfoModel experience_copy in Model.view_experiences)
+                    {
+                        <div class="grid-card">
+                            <h5>@experience_copy.title</h5>
+                            <label>@experience_copy.subtitle</label>
+                            <p>@experience_copy.address</p>
+                            <p>@experience_copy.description</p>
+                            <p>@{@experience_copy.start_date.Month} @{@experience_copy.start_date.Year} - @{@experience_copy.end_date.Month} @{@experience_copy.end_date.Year}</p>
+                        </div>         
+                    } 
+                }
+            </div> 
+        </div> 
     </div>
     <br />
 
@@ -67,7 +74,7 @@
             } 
         }
     </div>  
-
+</section>
 
 
 

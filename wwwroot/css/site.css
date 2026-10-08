@@ -68,19 +68,34 @@ body {
 
 .info {
   position: relative;
-  background: #6c5671;
+  background: #6c5770;
   padding:100px;
+  color: #6c5770;
+}
+
+#info-title {
   color: #ffff;
+  font-weight: 5px;
 }
 
-.educ {
-  margin-bottom: 10px
+.experience-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5ex;
 }
 
-.exp {
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  gap: 1em;
 }
 
-.proj {
-
+.grid-card {
+  border: 5px solid #DEA38B; 
+  background-color: #ffe6C6;
+  border-radius: 1em;
+  padding: 2ex;
+  align-items: baseline;
+  justify-content: left;
 }

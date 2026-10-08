@@ -1,3 +1,17 @@
+/* /Views/RenovalesPortfolio/Portfolio_2.cshtml.rz.scp.css */
+body[b-fnyi2ko49u] {
+    background: #ffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.parallax[b-fnyi2ko49u] {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 /* /Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

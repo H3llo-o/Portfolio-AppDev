@@ -1,0 +1,13 @@
+body {
+    background: #ffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

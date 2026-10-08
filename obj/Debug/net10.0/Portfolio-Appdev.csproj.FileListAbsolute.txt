@@ -15,6 +15,7 @@ D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Port
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\rjimswa.dswa.cache.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\scopedcss\Views\RenovalesPortfolio\Portfolio_2.cshtml.rz.scp.css
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\scopedcss\bundle\Portfolio-Appdev.styles.css
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\scopedcss\projectbundle\Portfolio-Appdev.bundle.scp.css
@@ -80,8 +81,8 @@ D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\comp
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\h41lo8f2a5-{0}-9vr69e8ynj-9vr69e8ynj.gz
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\ydyc7z0dwb-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\firyeaq5e8-{0}-mlv21k5csn-mlv21k5csn.gz
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\4n366ry9x7-{0}-jhkjmgjq3a-jhkjmgjq3a.gz
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\wfn24tpmly-{0}-jhkjmgjq3a-jhkjmgjq3a.gz
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\4n366ry9x7-{0}-7wb9ai89sx-7wb9ai89sx.gz
+D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\compressed\wfn24tpmly-{0}-7wb9ai89sx-7wb9ai89sx.gz
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\staticwebassets.build.json
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\staticwebassets.development.json
@@ -90,9 +91,3 @@ D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\swae
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.dll
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\refint\Portfolio-Appdev.dll
 D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.pdb
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.deps.json
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.runtimeconfig.json
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.dll
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\bin\Debug\net10.0\Portfolio-Appdev.pdb
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.genruntimeconfig.cache
-D:\Self Projects\learningc#\Duo_practice\Portfolio-AppDev\obj\Debug\net10.0\ref\Portfolio-Appdev.dll

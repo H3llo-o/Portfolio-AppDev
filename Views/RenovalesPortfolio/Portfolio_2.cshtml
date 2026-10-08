@@ -6,15 +6,18 @@
 
 <section class="parallax">
 
-    <div class="text-center">
-        <h1 class="display-4">Welcome to My Portfolio</h1>
-        <p>A culmination of all the works that I have done for the past few years</p>
+    <div>
+        <h1 class="display-5">Welcome to My Portfolio</h1>
+        <p>A culmination of all the works that I have done over the past few years</p>
         <br />
         <br />
-        <h1>@Model.view_personal_info.first_name</h1>
+        <h1>Hi! I am @Model.view_personal_info.first_name</h1>
     </div>
+</section>
 
-    <div class="parallax">
+<section>
+
+    <div>
         <h3>Educational Attainment</h3>
         @{
             foreach (UserInfoModel education_copy in Model.view_education)
@@ -26,9 +29,6 @@
         }
     </div>
     <br />
-</section>
-
-<section>
     
     <div>
         <h3 class="text-end">Experiences</h3>

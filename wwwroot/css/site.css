@@ -18,6 +18,9 @@ html {
 }
 
 body {
+  background: #ffff;
+  min-height: 100vh;
+  overflow-x: hidden;
   margin-bottom: 60px;
 }
 
@@ -28,4 +31,17 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+
 }

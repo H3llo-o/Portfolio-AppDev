@@ -5,14 +5,101 @@
     ViewData["Title"] = "Portfolio";
 }
 
+
 <style>
     body {
         background-color: #001C47;
         color: #D3AF37;
     }
+
+    .sep-line {
+        width: 95%;
+        border: none;
+        border-top: 6px solid #D3AF37;
+        margin: 5px auto;
+        opacity: 1;
+    }
+
+    .cat-line {
+        width: 95%;
+        border: none;
+        border-top: 1px solid #D3AF37;
+        margin: 5px auto;
+        opacity: 1;
+    }
+
 </style>
 
 <div class="text-center">
     <h1 class="display-4">Portfolio</h1>
-    <p>Previous Works</p>
+    <h2>Previous Works</h2>
+    <hr class="sep-line" />
+</div>
+
+<div class="work-item">
+    <div class="work-info">
+    <h3>Endlings</h3>
+            <ul>
+                @foreach (var skill in Model.Endlings)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+    </div>
+    <img src="~/images/endlings.png" alt="Endlings screenshot" />
+</div>
+    <hr class="cat-line" />
+
+<div class="work-item">
+    <div class="work-info">
+    <h3>Egress</h3>
+            <ul>
+                @foreach (var skill in Model.Egress)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+    </div>
+    <img src="~/images/egress.png" alt="Egress screenshot" />
+</div>
+    <hr class="cat-line" />
+<div class="work-item">
+    <div class="work-info">
+    <h3>Sortcery</h3>
+            <ul>
+                @foreach (var skill in Model.Sortcery)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+    </div>
+    <img src="~/images/sortcery.png" alt="Sortcery screenshot" />
+</div>
+    <hr class="cat-line" />
+<div class="work-item">
+    <div class="work-info">
+    <h3>ResponSite</h3>
+            <ul>
+                @foreach (var skill in Model.Responsite)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+    </div>
+        <img src="~/images/responsite.png" alt="ResponSite screenshot" />
+</div>
+    <hr class="cat-line" />
+<div class="work-item">
+    <div class="work-info">
+    <h3>Biodiversity Archive System Design using a Relational Database Approach for Documentation of Local Flora and Fauna at the Polytechnic University of the Philippines - Sta. Mesa</h3>
+            <ul>
+                @foreach (var skill in Model.ArchSys)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+    </div>
+    <img src="~/images/archsys.png" alt="Biodiversity Archive System screenshot" />
+</div>
+    <hr class="cat-line" />
 </div>

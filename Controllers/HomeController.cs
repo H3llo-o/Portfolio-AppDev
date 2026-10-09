@@ -66,9 +66,37 @@ public class HomeController : Controller
     {
         var portfolio = new Portfolio
             {
-                
+                Endlings = new List<string>
+                    {
+                        "Project Lead, Game Designer, and Backend Programmer",
+                        "December 2025"
+                    },
+
+                Egress = new List<string>
+                    {
+                        "Game Designer and Playtester",
+                        "March 2025 - July 2025"
+                    },
+
+                Sortcery = new List<string>
+                    {
+                        "Backend Programmer and Project Manager",
+                        "June 2026"
+                    },
+
+                Responsite = new List<string>
+                    {
+                        "Technical Writer",
+                        "December 2025 - January 2025"
+                    },
+
+                ArchSys = new List<string>
+                    {
+                        "Project Lead",
+                        "June 2026"
+                    },
             };
-        return View();
+        return View(portfolio);
     }
     
     public IActionResult Privacy()

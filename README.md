@@ -5,7 +5,7 @@
 
 ### Assets & Resources:
 - **Color palette:** https://lospec.com/palette-list/vanilla-milkshake
-- **Icons Used:** https://www.figma.com/design/IAxlOpHGPji17tpf2TzxyP/Material-Design-Icons--Community-?node-id=6-16286&t=ZnO3TYNHIvWhoUyX-1
+- **Icons Used:** https://www.flaticon.com/ 
 - **Others:** Provided by the programmer as a compilation of old works (parallax bg, moving sprites etc.)
 
 ### References Used:

@@ -4,7 +4,7 @@
 - **UI:** https://www.figma.com/design/CnGMZgNqR8Yy5fXV29Hf9R/Test-UI?node-id=2-2&t=ZnO3TYNHIvWhoUyX-1
 
 ### Assets & Resources:
-- **Color palette:** https://lospec.com/palette-list/eulbink 
+- **Color palette:** https://lospec.com/palette-list/vanilla-milkshake
 - **Icons Used:** https://www.figma.com/design/IAxlOpHGPji17tpf2TzxyP/Material-Design-Icons--Community-?node-id=6-16286&t=ZnO3TYNHIvWhoUyX-1
 - **Others:** Provided by the programmer as a compilation of old works (parallax bg, moving sprites etc.)
 

@@ -18,34 +18,6 @@ public class RenovalesPortfolioController : Controller
             personal_info .school_name = "Polytechnic University of the Philippines";
             personal_info .program= "Bachelor of Science in Computer Science";
 
-            // List<UserInfoModel> education = new List<UserInfoModel>();
-            // education.Add(new UserInfoModel
-            // { 
-            //     school_name = "Pasig City Science High School",
-            //     address = "Maybunga, Pasig City",
-            //     start_date = new DateOnly (2018, 1, 1),
-            //     end_date = new DateOnly (2022, 1, 1)
-            // } 
-            // );
-
-            // education.Add(new UserInfoModel
-            // { 
-            //     school_name = "Pasig City Science High School",
-            //     address = "Maybunga, Pasig City",
-            //     start_date = new DateOnly (2022, 1, 1),
-            //     end_date = new DateOnly (2024, 1, 1)
-            // } 
-            // );
-
-            // education.Add(new UserInfoModel
-            // { 
-            //     school_name = "Polytechnic University of the Philippines",
-            //     address = "Anonas Street, Sta. Mesa, Manila",
-            //     start_date = new DateOnly (2024, 1, 1),
-            //     end_date = new DateOnly (2028, 1, 1)
-            // } 
-            // );
-
             List<UserInfoModel> experience = new List<UserInfoModel>();
             experience.Add(new UserInfoModel
             {

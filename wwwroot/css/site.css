@@ -123,35 +123,32 @@ body {
     z-index: 10;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px 40px;
-    width: 95%;
-    margin: 25px auto;
-    align-items: start;
+.skill-left { 
+    margin-left: 5%; 
+    margin-right: auto; 
 }
 
-.skills-grid .skill-container {
-    width: 350px;
-    max-width: 100%;
-    margin: 0;
+.skill-left .skill-panel { 
+    left: 100%; 
+    right: auto; 
+    transform: translateX(-30px); 
 }
 
-.skills-grid .skill-left {
-    justify-self: start;
+.skill-left:hover .skill-panel { 
+    transform: translateX(10px); 
 }
 
-.skills-grid .skill-right {
-    justify-self: end;
+.skill-right { 
+    margin-left: auto; 
+    margin-right: 5%; 
 }
 
-@media (max-width: 700px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+.skill-right .skill-panel { 
+    left: auto; 
+    right: 100%; 
+    transform: translateX(30px); 
+}
 
-    .skills-grid .skill-container {
-        justify-self: center;
-    }
+.skill-right:hover .skill-panel { 
+    transform: translateX(-10px); 
 }

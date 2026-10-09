@@ -6,7 +6,7 @@
 
 <section class="parallax">
 
-    <img src="~/img/Sky.png" id="sky" />
+    <img src="~/img/Sky.png" id="sky"/>
     <div id="title_text">
         <h1 class="display-5">Little Things About Me</h1>
         <p><i>A culmination of some of works that I have done over the past few years</i></p>
@@ -42,7 +42,7 @@
  *@
 
 <section class="info">
-    <h3 class="info-title">Projects</h3>
+    <h3 class="info-title">PROJECTS</h3>
     <div>
         <br />
         <div class="project-grid" id="project-text">
@@ -64,7 +64,10 @@
 
 <section class="info">
     <div class="experience-contents">
-        <h3 class="info-title">Experience</h3>
+        <div class="special-title">
+            <img src="~/img/Dizzy.gif" id="dizzy-mascot"/>
+            <h3 class="info-title" id="experience-fixed">EXPERIENCE</h3>
+        </div>
         <br />
         <div class="experience-grid" id="experience-text">
             @{
@@ -79,7 +82,7 @@
                     </div>         
                 } 
             }
-        </div> 
+        </div>
     </div>
     <br />
 </section>
@@ -88,17 +91,42 @@
     <div class="panning" id="panning">
         <div class="panner">
             <div class="pan" id="one">
-                <h3 class="info-title" id="about-me-title">About Me</h3>
+                <h3 class="info-title" id="about-me-title">ABOUT ME</h3>
                 <img src="~/img/Mascot_run.gif" id="one-mascot">
-                <p id="one-text">Slide to the Right!</p>
+                <p id="one-text">Slide to the Right</p>
             </div>
+
             <div class="pan" id="two">
                 <h3 id="title-desc-1">CREATIVE WORK</h3>
                 <h3 id="title-desc-2">THIS IS ME</h3>
-                <h3 id="title-desc-3">A VISION</h3>
                 <img src="~/img/Picture.png" id="self-picture"/>
+                <h3 id="title-desc-3">A VISION</h3>
             </div>
-            <div class="pan" id="three"></div>
+
+            <div class="pan" id="three">
+                <h3 class="info-title" id="lets-connect-title">LETS CONNECT</h3>
+                <div class="lets-connect-title">
+                    <img src="~/img/Meerkat_idle_butler.gif" id="one-mascot"/>
+                    <h7 id="meerkat-dialogue">Always searching for new opportunities <3</h7>
+                </div>
+                <div class="container-group">
+                    <div class="email-container">
+                        <p>Connect through:</p>
+                    @foreach (UserInfoModel email_list_copy in Model.view_email_list)
+                        {
+                            <p>@email_list_copy.email</p>         
+                        }
+                    </div>
+                    <div class="socials-container">
+                        <div class="socials-buttons">
+                            <img src="~/img/facebook_icon.png"/>
+                            <img src="~/img/instagram_icon.png"/>
+                            <img src="~/img/github_icon.png"/>
+                            <img src="~/img/linkedin_icon.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div> 
     </div> 
 </section> 

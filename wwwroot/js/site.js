@@ -13,7 +13,7 @@ let bush = document.getElementById('bush');
 window.addEventListener('scroll', () => {                           // Active for the whole window
     let action = window.scrollY;
 
-    title_text.style.marginTop = (action * 0.5 - 250) + 'px';
+    title_text.style.marginTop = (action * 0.8 - 250) + 'px';
     tree_1.style.left = action * 0.5 + 'px';
     tree_2.style.left = action * -0.5 + 'px';
     bush.style.top = action * 0.05 + 'px';

@@ -6,4 +6,6 @@ public class ViewModel
     public List<UserInfoModel> view_education { get; set; }
     public List<UserInfoModel> view_experiences { get; set; }
     public List<UserInfoModel> view_projects { get; set; }
+    public List<UserInfoModel> view_socials { get; set; }
+    public List<UserInfoModel> view_email_list { get; set; }
 }

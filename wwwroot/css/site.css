@@ -39,7 +39,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  min-height: 120vh;
   overflow: hidden;
 }
 
@@ -79,17 +79,30 @@ body {
   font-weight: 5px;
 }
 
-.experience-contents{
+.experience-contents {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5ex;
 }
 
+#dizzy-mascot, #squished-mascot {
+  position: relative;
+  width: 20vw;
+  max-width: 120px;
+}
+
+.special-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(2, 5fr);
   gap: 1em;
+  width: 100%;
 }
 
 .experience-grid-card {
@@ -157,6 +170,9 @@ body {
 }
 
 .pan {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 100vw;
   height: 100vh;
 }
@@ -195,6 +211,12 @@ body {
 }
 
 #three {
+  color: #ffff;
+  display: flex;
+  position: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: #6c5671;
 }
 
@@ -216,6 +238,11 @@ body {
   position: absolute;
 }
 
+#lets-connect-title {
+  top: 10px;
+  position: absolute;
+}
+
 #title-desc-1 {
   font-size: 10em;
   position: absolute;
@@ -233,8 +260,6 @@ body {
   position: absolute;
 }
 
-
-
 #self-picture {
   width: 100vh;
   left: 2235px;
@@ -243,7 +268,53 @@ body {
   object-fit: cover;
 }
 
-/* #about-me {
+.lets-connect-title{
+  display: flex;
+  flex-direction: column;
+  gap: 1ex;
+  font-size: 16px;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5ex;
+  font-size: 16px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socials-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 7em;
+}
+
+#meerkat-dialogue {
+  position: absolute;
+  left: 3965px;
+  bottom: 530px;
+  border: 2px solid #ffff;
+  border-radius: 100px;
+  padding: 10px
+}
+
+.container-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.container-group img {
+  width: 5vh;
+}
+
+/* #about-me {                          // If ever choosing to show the privacy section since overflow prevents
   position: relative;
   width: 100vw;
   height: 100vh;

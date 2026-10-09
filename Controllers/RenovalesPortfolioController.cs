@@ -15,6 +15,7 @@ public class RenovalesPortfolioController : Controller
             personal_info .last_name = "Renovales";
             personal_info .address = "Blk. 12, Lot 22, First Christian, Nagpayong, Pinagbuhatan, Pasig City";
             personal_info .age = 21;
+            personal_info .contacts_no = "09611769418";
 
             List<UserInfoModel> education = new List<UserInfoModel>();
             education.Add(new UserInfoModel
@@ -123,12 +124,62 @@ public class RenovalesPortfolioController : Controller
             }
             );
 
+            List<UserInfoModel> socials = new List<UserInfoModel>();
+            socials.Add(new UserInfoModel
+            {
+                image = "~/img/facebook_icon.png",
+                title = "Facebook",
+                link = "https://www.facebook.com/joshua.renovales",
+            }
+            );
+
+            socials.Add(new UserInfoModel
+            {
+                image = "~/img/instagram_icon.png",
+                title = "Instagram",
+                link = "https://www.instagram.com/joshuarenovales/",
+            }
+            );
+
+            socials.Add(new UserInfoModel
+            {
+                image = "~/img/github_icon.png",
+                title = "GitHub",
+                link = "https://github.com/H3llo-o",
+            }
+            );
+
+            socials.Add(new UserInfoModel
+            {
+                image = "~/img/linkedin_icon.png",
+                title = "LinkedIn",
+                link = "https://www.linkedin.com/in/joshua-renovales-b66491327",
+            }
+            );
+
+            List<UserInfoModel> email_list = new List<UserInfoModel>();
+            email_list.Add(new UserInfoModel
+            {   
+                title = "Gmail",
+                email = "joshrenovales@gmail.com",
+            }
+            );
+
+            email_list.Add(new UserInfoModel
+            {   
+                title = "PUP Webmail",
+                email = "joshuarenovales@iskolarngbayan.pup.edu.ph",
+            }
+            );
+
             ViewModel information_repo = new ViewModel()
             {
                 view_personal_info = personal_info,
                 view_education = education,
                 view_experiences = experience,
-                view_projects = project
+                view_projects = project,
+                view_socials = socials,
+                view_email_list = email_list,
             };
 
             return View(information_repo);

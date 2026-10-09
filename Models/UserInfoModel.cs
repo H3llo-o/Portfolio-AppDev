@@ -11,6 +11,11 @@ public class UserInfoModel
     public string title { get; set; }
     public string subtitle { get;set; }
     public string description { get; set; }
+    public string language { get; set; }
+    public string contacts_no { get; set; }
+    public string email { get; set; }
+    public string link { get; set; }
+
     public DateOnly start_date { get; set; } 
     public DateOnly end_date { get; set; } 
 }

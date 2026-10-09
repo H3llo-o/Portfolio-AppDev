@@ -95,4 +95,4 @@ C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\r
 C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.pdb
 C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\Portfolio-Appdev.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\ref\Portfolio-Appdev.dll
-C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\compressed\7endbspeqv-{0}-nc69zck07b-nc69zck07b.gz
+C:\Users\ADMIN\Desktop\Home\AppDev_Activity\Portfolio-AppDev\obj\Debug\net10.0\compressed\7endbspeqv-{0}-55lx0f39pw-55lx0f39pw.gz

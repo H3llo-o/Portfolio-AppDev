@@ -152,3 +152,54 @@ body {
 .skill-right:hover .skill-panel { 
     transform: translateX(-10px); 
 }
+
+.education-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 40px; width: 95%; 
+  margin: 20px auto; 
+}
+
+.education-card { 
+  flex: 1; 
+  min-width: 0; 
+  text-align: center; 
+}
+
+.education-card h2 { 
+  color: #D3AF37; 
+  font-size: 1.5rem; 
+}
+
+.education-card ul { 
+  display: inline-block; 
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.school-logo { 
+  display: block;
+  height: 100px; 
+  object-fit: contain; 
+  margin: 20px auto; 
+}
+
+.education-card:first-child .school-logo {
+    width: 180px;
+}
+
+.education-card:last-child .school-logo {
+    width: 240px;
+}
+
+@media (max-width: 700px) { 
+  .education-container { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .education-card { 
+    width: 100%; 
+  } 
+}

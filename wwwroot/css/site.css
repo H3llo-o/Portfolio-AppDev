@@ -93,7 +93,7 @@ body {
   gap: 5ex;
 }
 
-#dizzy-mascot, #squished-mascot {
+#dizzy-mascot {
   position: relative;
   width: 20vw;
   max-width: 120px;
@@ -103,6 +103,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.special-title:hover img{
+  transform: scale(1.2);
 }
 
 .experience-grid {

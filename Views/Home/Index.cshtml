@@ -66,14 +66,40 @@
     </ul>
 </div>
 
-    <h2>Data Science</h2>
+<div class = "skill-container">
+    <div class = "skill-button">
+        <h2>Data Science</h2>
+        <ul>
+            @foreach (var skill in Model.DataScienceSkills)
+            {
+                <li>@skill</li>
+            }
+        </ul>
+    </div>
 
-    <ul>
-        @foreach (var skill in Model.DataScienceSkills)
+    <div class = "skill-panel">
+         @foreach (var skill in Model.DataScienceSkills)
         {
-            <li>@skill</li>
+            if (skill == "Python")
+            {
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                     alt="Python" />
+            }
+            else if (skill == "R")
+            {
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
+                     alt="R" />
+            }
+            else if (skill == "SQL")
+            {
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                     alt="SQL" />
+            }
         }
-    </ul>
+    </div>
+</div>
+
+<div class = "skill-container">
 
     <h2>Programming</h2>
 
@@ -84,14 +110,40 @@
         }
     </ul>
 
-    <h2>Web Development</h2>
+</div>
+<div class = "skill-container">
+        <div class = "skill-button">
+            <h2>Web Development</h2>
 
-    <ul>
-        @foreach (var skill in Model.WebDevelopmentSkills)
+            <ul>
+                @foreach (var skill in Model.WebDevelopmentSkills)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+        </div>
+
+        <div class = "skill-panel">
+         @foreach (var skill in Model.WebDevelopmentSkills)
         {
-            <li>@skill</li>
+            if (skill == "HTML")
+            {
+                <img src="https://banner2.cleanpng.com/20180529/loy/kisspng-html-computer-icons-icon-design-5b0de82f39f353.2568037815276380632374.jpg"
+                     alt="HTML" />
+            }
+            else if (skill == "CSS")
+            {
+                <img src="https://banner2.cleanpng.com/20180503/thq/avdoer0cb.webp"
+                     alt="CSS" />
+            }
+            else if (skill == "JavaScript")
+            {
+                <img src="https://iconape.com/wp-content/files/ez/353342/png/javascript-logo.png"
+                     alt="JavaScript" />
+            }
         }
-    </ul>
+    </div>
+</div>
 
     <h2>Arts & Design</h2>
 

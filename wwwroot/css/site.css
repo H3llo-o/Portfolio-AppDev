@@ -30,3 +30,95 @@ body {
   text-align: start;
 }
 
+.skill-container {
+    position: relative;
+    width: 350px;
+    margin: 25px auto;
+    z-index: 1;
+}
+
+.skill-button {
+    position: relative;
+    z-index: 2;
+
+    width: 350px;
+    min-height: 90px;
+    box-sizing: border-box;
+
+    background-color: #001C47;
+    border: 2px solid #D3AF37;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+    cursor: pointer;
+}
+
+.skill-button h2 {
+    color: #D3AF37;
+    margin: 0 0 8px 0;
+}
+
+.skill-button ul {
+    color: #D3AF37;
+    text-align: left;
+    margin: 0;
+    padding-left: 25px;
+}
+
+.skill-panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+
+    width: 280px;
+    min-height: 90px;
+    box-sizing: border-box;
+
+    background-color: #001C47;
+    border: 2px solid #D3AF37;
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateX(-30px);
+    transition: opacity 0.35s ease,
+                transform 0.35s ease,
+                visibility 0.35s;
+}
+
+.skill-panel img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.skill-container:hover .skill-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(10px);
+}
+
+.skill-container:hover {
+    z-index: 10;
+}

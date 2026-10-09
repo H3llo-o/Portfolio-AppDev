@@ -66,6 +66,8 @@
     </ul>
 </div>
 
+<hr class="sep-line">
+
 <div class = "skill-container">
     <div class = "skill-button">
         <h2>Data Science</h2>
@@ -100,17 +102,34 @@
 </div>
 
 <div class = "skill-container">
+    <div class = "skill-button">
+        <h2>Programming</h2>
 
-    <h2>Programming</h2>
+        <ul>
+            @foreach (var skill in Model.ProgrammingSkills)
+            {
+                <li>@skill</li>
+            }
+        </ul>
+    </div>
 
-    <ul>
-        @foreach (var skill in Model.ProgrammingSkills)
+     <div class = "skill-panel">
+         @foreach (var skill in Model.ProgrammingSkills)
         {
-            <li>@skill</li>
+            if (skill == "C#")
+            {
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                     alt="C#" />
+            }
+            else if (skill == "Java")
+            {
+                <img src="https://iconape.com/wp-content/files/zy/371206/svg/371206.svg"
+                     alt="Java" />
+            }
         }
-    </ul>
-
+    </div>
 </div>
+
 <div class = "skill-container">
         <div class = "skill-button">
             <h2>Web Development</h2>
@@ -145,21 +164,61 @@
     </div>
 </div>
 
-    <h2>Arts & Design</h2>
+<div class = "skill-container">
+     <div class = "skill-button">
+        <h2>Arts & Design</h2>
 
-    <ul>
-        @foreach (var skill in Model.ArtsDesignSkills)
+        <ul>
+            @foreach (var skill in Model.ArtsDesignSkills)
+            {
+                <li>@skill</li>
+            }
+        </ul>
+    </div>
+
+    <div class = "skill-panel">
+         @foreach (var skill in Model.ArtsDesignSkills)
+            {
+                if (skill == "Adobe Photoshop")
+                {
+                    <img src="https://iconape.com/wp-content/files/ix/373285/png/373285.png"
+                        alt="Adobe Photoshop" />
+                }
+            }
+    </div>  
+</div>
+
+<div class = "skill-container">
+    <div class = "skill-button">
+        <h2>Collaboration</h2>
+
+        <ul>
+            @foreach (var skill in Model.CollaborationSkills)
+            {
+                <li>@skill</li>
+            }
+        </ul>
+    </div>
+
+    <div class = "skill-panel">
+         @foreach (var skill in Model.CollaborationSkills)
         {
-            <li>@skill</li>
+            if (skill == "GitHub")
+            {
+                <img src="https://iconape.com/wp-content/files/ni/388833/svg/388833.svg"
+                     alt="GitHub" />
+            }
+            else if (skill == "Online Document Collaboration Tools")
+            {
+                <img src="https://iconape.com/wp-content/files/ch/387943/svg/387943.svg"
+                     alt="Online Document Collaboration Tools" />
+            }
+            else if (skill == "Online Communication Platforms")
+            {
+                <img src="https://iconape.com/wp-content/files/ju/346843/png/microsoft-teams-logo.png"
+                     alt="Online Communication Platforms" />
+            }
         }
-    </ul>
-
-    <h2>Collaboration</h2>
-
-    <ul>
-        @foreach (var skill in Model.CollaborationSkills)
-        {
-            <li>@skill</li>
-        }
-    </ul>
+    </div>   
+</div>
 

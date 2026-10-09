@@ -21,47 +21,6 @@
     <img src="~/img/Fixed_Ground.png" id="ground" />
 </section>
 
-
-@*
-<section class="info">
-    <div>
-        <h3>Educational Attainment</h3>
-        <div>
-            @{
-                foreach (UserInfoModel education_copy in Model.view_education)
-                {
-                    <h5>@education_copy.school_name</h5>
-                    <p>@education_copy.address</p>
-                    <p><b>Graduated:</b> @{@education_copy.start_date.Year} - @{@education_copy.end_date.Year}</p>         
-                }
-            }
-        </div>
-    </div>
-    <br />
-</section>
- *@
-
-<section class="info">
-    <h3 class="info-title">PROJECTS</h3>
-    <div>
-        <br />
-        <div class="project-grid" id="project-text">
-            @{
-                foreach (UserInfoModel project_copy in Model.view_projects)
-                {
-                    <div class="project-grid-card">
-                        <img src="@project_copy.image" asp-append-version="true"/>
-                        <h4>@project_copy.title</h4>
-                        <label>@project_copy.subtitle</label>
-                        <p>@project_copy.description</p>
-                        <p><b>@{@project_copy.start_date.Month}/@{@project_copy.start_date.Year} - @{@project_copy.end_date.Month}/@{@project_copy.end_date.Year}</b></p>
-                    </div>         
-                } 
-            }
-        </div>
-    </div>  
-</section>
-
 <section class="info">
     <div class="experience-contents">
         <div class="special-title">
@@ -87,42 +46,82 @@
     <br />
 </section>
 
+<section class="info">
+    <h3 class="info-title">PROJECTS</h3>
+    <div>
+        <br />
+        <div class="project-grid" id="project-text">
+            @{
+                foreach (UserInfoModel project_copy in Model.view_projects)
+                {
+                    <div class="project-grid-card">
+                        <img src="@project_copy.image" asp-append-version="true" />
+                        <h4>@project_copy.title</h4>
+                        <label>@project_copy.subtitle</label>
+                        <p>@project_copy.description</p>
+                        <p><b>@{@project_copy.start_date.Month}/@{@project_copy.start_date.Year} - @{@project_copy.end_date.Month}/@{@project_copy.end_date.Year}</b></p>
+                    </div>         
+                } 
+            }
+        </div>
+    </div>  
+</section>
+
 <section class="info" id="about-me">
     <div class="panning" id="panning">
         <div class="panner">
             <div class="pan" id="one">
                 <h3 class="info-title" id="about-me-title">ABOUT ME</h3>
-                <img src="~/img/Mascot_run.gif" id="one-mascot">
+                <img src="~/img/Mascot_run.gif" id="default-mascot">
                 <p id="one-text">Slide to the Right</p>
             </div>
 
             <div class="pan" id="two">
                 <h3 id="title-desc-1">CREATIVE WORK</h3>
                 <h3 id="title-desc-2">THIS IS ME</h3>
+                <p id="technical-workflow">Technical: C C# Java JS MD Python R Next JS .NET Tailwind MySQL Git</p>
                 <img src="~/img/Picture.png" id="self-picture"/>
                 <h3 id="title-desc-3">A VISION</h3>
+                <div class="education">
+                    <p>@Model.view_personal_info.school_name</p>
+                    <p>@Model.view_personal_info.program</p>
+                </div>
+                <div class="hobbies">
+                    <p>Drawing</p>
+                    <p>Ideation</p>
+                    <p>Games</p>
+                </div>
+                <p id="creative-workflow">Proficient: Figma Canva Adobe-Ps Adobe-Il CapCut Aseprite</>
             </div>
 
             <div class="pan" id="three">
-                <h3 class="info-title" id="lets-connect-title">LETS CONNECT</h3>
+                <h3 class="info-title" id="lets-connect-title">LETS CONNECT!</h3>
                 <div class="lets-connect-title">
-                    <img src="~/img/Meerkat_idle_butler.gif" id="one-mascot"/>
+                    <img src="~/img/Meerkat_idle_butler.gif" id="butler-mascot"/>
                     <h7 id="meerkat-dialogue">Always searching for new opportunities <3</h7>
                 </div>
                 <div class="container-group">
                     <div class="email-container">
                         <p>Connect through:</p>
-                    @foreach (UserInfoModel email_list_copy in Model.view_email_list)
+                        @foreach (UserInfoModel email_list_copy in Model.view_email_list)
                         {
                             <p>@email_list_copy.email</p>         
                         }
                     </div>
                     <div class="socials-container">
                         <div class="socials-buttons">
-                            <img src="~/img/facebook_icon.png"/>
-                            <img src="~/img/instagram_icon.png"/>
-                            <img src="~/img/github_icon.png"/>
-                            <img src="~/img/linkedin_icon.png"/>
+                            <a href="https://www.facebook.com/joshua.renovales" target="_blank">
+                                <img src="~/img/facebook_icon.png" class="social-icon" />
+                            </a>
+                             <a href="https://www.instagram.com/joshuarenovales/" target="_blank">
+                                <img src="~/img/instagram_icon.png" class="social-icon" />
+                            </a>
+                            <a href="https://github.com/H3llo-o" target="_blank">
+                            <img src="~/img/github_icon.png" class="social-icon" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/joshua-renovales-b66491327" target="_blank">
+                            <img src="~/img/linkedin_icon.png" class="social-icon" />
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -15,35 +15,36 @@ public class RenovalesPortfolioController : Controller
             personal_info .last_name = "Renovales";
             personal_info .address = "Blk. 12, Lot 22, First Christian, Nagpayong, Pinagbuhatan, Pasig City";
             personal_info .age = 21;
-            personal_info .contacts_no = "09611769418";
+            personal_info .school_name = "Polytechnic University of the Philippines";
+            personal_info .program= "Bachelor of Science in Computer Science";
 
-            List<UserInfoModel> education = new List<UserInfoModel>();
-            education.Add(new UserInfoModel
-            { 
-                school_name = "Pasig City Science High School",
-                address = "Maybunga, Pasig City",
-                start_date = new DateOnly (2018, 1, 1),
-                end_date = new DateOnly (2022, 1, 1)
-            } 
-            );
+            // List<UserInfoModel> education = new List<UserInfoModel>();
+            // education.Add(new UserInfoModel
+            // { 
+            //     school_name = "Pasig City Science High School",
+            //     address = "Maybunga, Pasig City",
+            //     start_date = new DateOnly (2018, 1, 1),
+            //     end_date = new DateOnly (2022, 1, 1)
+            // } 
+            // );
 
-            education.Add(new UserInfoModel
-            { 
-                school_name = "Pasig City Science High School",
-                address = "Maybunga, Pasig City",
-                start_date = new DateOnly (2022, 1, 1),
-                end_date = new DateOnly (2024, 1, 1)
-            } 
-            );
+            // education.Add(new UserInfoModel
+            // { 
+            //     school_name = "Pasig City Science High School",
+            //     address = "Maybunga, Pasig City",
+            //     start_date = new DateOnly (2022, 1, 1),
+            //     end_date = new DateOnly (2024, 1, 1)
+            // } 
+            // );
 
-            education.Add(new UserInfoModel
-            { 
-                school_name = "Polytechnic University of the Philippines",
-                address = "Anonas Street, Sta. Mesa, Manila",
-                start_date = new DateOnly (2024, 1, 1),
-                end_date = new DateOnly (2028, 1, 1)
-            } 
-            );
+            // education.Add(new UserInfoModel
+            // { 
+            //     school_name = "Polytechnic University of the Philippines",
+            //     address = "Anonas Street, Sta. Mesa, Manila",
+            //     start_date = new DateOnly (2024, 1, 1),
+            //     end_date = new DateOnly (2028, 1, 1)
+            // } 
+            // );
 
             List<UserInfoModel> experience = new List<UserInfoModel>();
             experience.Add(new UserInfoModel
@@ -124,39 +125,6 @@ public class RenovalesPortfolioController : Controller
             }
             );
 
-            List<UserInfoModel> socials = new List<UserInfoModel>();
-            socials.Add(new UserInfoModel
-            {
-                image = "~/img/facebook_icon.png",
-                title = "Facebook",
-                link = "https://www.facebook.com/joshua.renovales",
-            }
-            );
-
-            socials.Add(new UserInfoModel
-            {
-                image = "~/img/instagram_icon.png",
-                title = "Instagram",
-                link = "https://www.instagram.com/joshuarenovales/",
-            }
-            );
-
-            socials.Add(new UserInfoModel
-            {
-                image = "~/img/github_icon.png",
-                title = "GitHub",
-                link = "https://github.com/H3llo-o",
-            }
-            );
-
-            socials.Add(new UserInfoModel
-            {
-                image = "~/img/linkedin_icon.png",
-                title = "LinkedIn",
-                link = "https://www.linkedin.com/in/joshua-renovales-b66491327",
-            }
-            );
-
             List<UserInfoModel> email_list = new List<UserInfoModel>();
             email_list.Add(new UserInfoModel
             {   
@@ -175,10 +143,8 @@ public class RenovalesPortfolioController : Controller
             ViewModel information_repo = new ViewModel()
             {
                 view_personal_info = personal_info,
-                view_education = education,
                 view_experiences = experience,
                 view_projects = project,
-                view_socials = socials,
                 view_email_list = email_list,
             };
 

@@ -3,6 +3,8 @@
 
 // Write your JavaScript code.
 
+
+// Parallax Effects 
 let title_text = document.getElementById('title_text');
 let tree_1 = document.getElementById('tree_1');
 let tree_2 = document.getElementById('tree_2');
@@ -22,6 +24,9 @@ window.addEventListener('scroll', () => {                           // Active fo
 let self_picture = document.getElementById('self-picture');
 let title_desc_2 = document.getElementById('title-desc-2');
 let title_desc_3 = document.getElementById('title-desc-3');
+let creative_workflow = document.getElementById('creative-workflow');
+let technical_workflow = document.getElementById('technical-workflow');
+let default_mascot = document.getElementById('default-mascot');
 let horizontal_pan = document.getElementById('panning');
 
 horizontal_pan.addEventListener('scroll', () => {                   // Works for the specific div
@@ -30,4 +35,7 @@ horizontal_pan.addEventListener('scroll', () => {                   // Works for
     self_picture.style.left = (new_action * -0.3 + 2250) + 'px';
     title_desc_2.style.left = (new_action * -0.45 + 2250) + 'px';
     title_desc_3.style.left = (new_action * 0.07 + 2250) + 'px';
+    creative_workflow.style.left = (new_action * 0.07 + 1500) + 'px';
+    technical_workflow.style.left = (new_action * -0.07 + 2250) + 'px';
+    default_mascot.style.left =  (new_action * 5 + 1550) + 'px';
 });

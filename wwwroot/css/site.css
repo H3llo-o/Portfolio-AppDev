@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Custom-Code";
+  src: url(../fonts/CodeFont.otf);
+}
+
 html {
   font-size: 14px;
 }
@@ -34,6 +39,7 @@ body {
 }
 
 .parallax {
+  font-family: "Custom-Code";
   position: relative;
   display: flex;
   text-align: center;
@@ -59,7 +65,7 @@ body {
 
 #name {
   text-align: center;
-  font-size:3ex;
+  font-size:5ex;
 }
 
 #sky, #cloud {
@@ -67,6 +73,7 @@ body {
 }
 
 .info {
+  font-family: "Custom-code";
   position: relative;
   background: #6c5771;
   padding: 120px;
@@ -210,6 +217,39 @@ body {
   background-color: #ffff;
 }
 
+.education {
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  left: 2500px;
+  font-size: 20px;
+}
+
+.hobbies {
+  position: absolute;
+  text-align: right;
+  top: 700px;
+  left: 1700px;
+  font-size: 20px;
+}
+
+#creative-workflow {
+  border-radius: 40px;
+  padding: 10px;
+  position: absolute;
+  top: 600px;
+  left: 1500px;
+  font-size: 30px;
+  font-weight: 5%;
+}
+
+#technical-workflow {
+  position: absolute;
+  top: 250px;
+  left: 2200px;
+  font-size: 30px;
+}
+
 #three {
   color: #ffff;
   display: flex;
@@ -310,11 +350,18 @@ body {
   gap: 5px;
 }
 
-.container-group img {
+.socials-buttons img {
+  filter: brightness(0) invert(1);
   width: 5vh;
+  transition: 0.1s ease-in-out;
 }
 
-/* #about-me {                          // If ever choosing to show the privacy section since overflow prevents
+.social-icon:hover {
+  filter: brightness(100%);
+  transform: scale(1.5);
+}
+
+/* #about-me {                          // If ever choosing to show the privacy footer since there is overflow
   position: relative;
   width: 100vw;
   height: 100vh;

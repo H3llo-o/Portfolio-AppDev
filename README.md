@@ -15,6 +15,7 @@
 
 #### Notes:
 - Could improve UI elements
+- Could add smoother transitions 
 - Supposedly an infinately scrolling design to show tech stack and other works
 - Fix horizontal scroll for about me as positioning is mostly not dynamic
 

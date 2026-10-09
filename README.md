@@ -6,7 +6,7 @@
 ### Assets & Resources:
 - **Color palette:** https://lospec.com/palette-list/eulbink 
 - **Icons Used:** https://www.figma.com/design/IAxlOpHGPji17tpf2TzxyP/Material-Design-Icons--Community-?node-id=6-16286&t=ZnO3TYNHIvWhoUyX-1
-- **Others:**Provided by the programmer as a compilation of old works (parallax bg, moving sprites etc.)
+- **Others:** Provided by the programmer as a compilation of old works (parallax bg, moving sprites etc.)
 
 ### References Used:
 - **Parallax:** https://www.youtube.com/watch?v=kmM6mqvnxcs&t=307s

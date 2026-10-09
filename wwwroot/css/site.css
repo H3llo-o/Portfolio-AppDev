@@ -231,3 +231,32 @@ body {
     height: 180px;
     object-fit: contain;
 }
+
+.sep-line {
+    width: 95%;
+    border: none;
+    border-top: 6px solid #D3AF37;
+    margin: 5px auto;
+    opacity: 1;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.cat-line {
+    width: 95%;
+    border: none;
+    border-top: 1px solid #D3AF37;
+    margin: 5px auto;
+    opacity: 1;
+}
+

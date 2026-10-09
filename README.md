@@ -19,4 +19,4 @@
 - Could fix naming system for css because it gets confusing
 - Supposidly an infinately scrolling design to show tech stack and other works
 - Fix horizontal scroll for about me as positioning is mostly not dynamic
-
+- Add abstraction to links and other components
